@@ -1,0 +1,23 @@
+  {{#items}}
+<div class="d-inline-block">
+<div class="row bck my-5 mx-5">
+   
+    <div class="  my-5 mx-5">
+         <p hidden>{{this.id}}</p>
+        <div class="text-center">
+            <img src="./uploads/{{this.picture}}" alt="..." class="rounded-circle that" />
+            <div class="caption">
+           
+                <h3>{{this.name}}</h3>
+                <p class="description"> {{this.words}}</p>
+                <div class="clearfix">
+                    <div class="price float-left">{{this.price}} dinara</div>
+                    <a href="/kupiti/{{this.id}}" class="btn btn-success float-right" role="button">Kupi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+   
+{{/items}}
